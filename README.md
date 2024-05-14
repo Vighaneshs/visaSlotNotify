@@ -1,4 +1,4 @@
-# visaSlotNotify
+# Visa Slots Notifier for India
 It is a script which can be used with the CheckVisaSlots extension. It notifies you when visa appointment is available in India, through a telegram bot and chat.
 
 1. Create telegram bot.

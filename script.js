@@ -20,6 +20,7 @@ async function funfun(){
             && table[i].childNodes[0].innerHTML != "MUMBAI VAC"
             && Number(table[i].childNodes[1].childNodes[0].innerText) >= 3)
             || (table[i].childNodes[0].innerHTML == "MUMBAI VAC" && Number(table[i].childNodes[1].childNodes[0].innerText) >= 59)){
+                    var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=`
                     var furl = url.concat(table[i].childNodes[0].innerHTML)
                     fetch(furl)
                         .then(response => response.json())
